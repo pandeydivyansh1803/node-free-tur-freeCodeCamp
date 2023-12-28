@@ -74,6 +74,8 @@ console.log('starting next task');
 // writeFileSync
 // the first parameter is file name and the second is the 
 // contents to be written inside the file
+// in the call back provided with writeFile we don't need or have result 
+// it's useless, hover mouse over it to understand
 
 // case-1) if file is not present node will create one
 // case-2) if file is present then it will be overwritten

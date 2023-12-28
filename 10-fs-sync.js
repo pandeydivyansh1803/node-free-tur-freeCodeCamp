@@ -51,7 +51,3 @@ writeFileSync('./content/result-sync.txt' , `hello world`
 
 
 
-
-
-console.log('done with the task');
-console.log('starting with the next task');

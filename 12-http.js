@@ -14,6 +14,7 @@ const server = http.createServer((req,res)=>{
     if(req.url === '/about'){
         res.end('Here is our short history')
     }
+    //res.write('hello world')
     res.end(`
     <h1>OOps</h1>
     <p> we can't find what you are looking for</p>

@@ -11,6 +11,7 @@
 
 console.log(__dirname);
 console.log(__filename);
+console.log(process);
 
 setTimeout(()=>{
     console.log(`hello world`)

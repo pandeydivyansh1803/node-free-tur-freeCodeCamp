@@ -1,46 +1,17 @@
-// npm stands for node package manager
-// npm --version
-
-// local dependency - use it only in this particular project
-// npm i <packageName>
-
-// global dependency - use it in any project
-// npm install -g <packageName>
-// sudo npm install -g <packageName> (mac)
+// streams in node.js
+// streams are used to read or write sequentially
+// when we have to handle and manipulate streaming data
+// for eg : continuous source or big file
+// streams are used
 
 
-// package.json - manifest file (stores important info about our project/package)
-// manual approach (create package.json in the root, create properties etc)
-// npm init (step by step, press enter to skip)
-// npm init -y (everthing default)
+// 4 types of streams
+// writeable : used to write data sequentially
+// readable :  used to read data sequentially
+// duplex : used to both read and write data sequentially
+// transform : data can be modified when reading / writing
+
+// streams extends EventEmitter class
+// we can use events with streams
 
 
-// we have already installed loadsh using npm i loadsh and then
-// import it
-const _ = require('loadsh')
-
-const items = [1,[2,[3,[4]]]]
-
-const newItems = _.flattenDeep(items)
-
-console.log(newItems)
-
-
-// when we push to github 
-// we don't push node modules i.e, dependenices
-// because of large size
-// when we download a repo with package.json
-// then we just need the command
-// npm install to install all dependencies 
-// mentioned in the package.json file
-
-
-
-
-// .gitignore
-// this will have files not to be pushed
-// we will include node_modules which contains dependencies inside this file
-
-
-
-// git init (git initialize karna)
